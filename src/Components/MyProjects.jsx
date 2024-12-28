@@ -1,11 +1,79 @@
-import image1 from "../assets/image1.png";
-import image2 from "../assets/image2.png";
-import image3 from "../assets/image3.png";
-import image4 from "../assets/image4.png";
-import image5 from "../assets/image5.png";
-import image6 from "../assets/image6.png";
+import { FaGithub } from "react-icons/fa";
+import { BiWorld } from "react-icons/bi";
+import health from "../assets/projects/health.png"
+import nashta from "../assets/projects/nashta.png"
+import alumni from "../assets/projects/alumni.png"
+import tesla from "../assets/projects/tesla.png"
+import portfolio from "../assets/projects/portfolio.png"
+import tpc from "../assets/projects/tpc.png"
 import Circle from "../assets/circle";
-import { Link } from "react-router-dom";
+
+const projects = [
+  {
+    id: 1,
+    name: "NIT Patna, Alumni Portal",
+    description:
+      "Official Alumni Portal for NIT Patna, One-stop portal for alumni of the NIT Patna.",
+    img: alumni,
+    github: "https://github.com/suraj-markup/alumini-cell-nitp",
+    url: "https://alumini-nitp.vercel.app/",
+    techStack: ["React Js", "Node Js", "Express", "Appwrite", "Tailwind CSS"],
+  },
+  {
+    id: 2,
+    name: "Tesla NITP",
+    description:
+      "Official website of Tesla Club NIT Patna, A club for Electrical Engg. students.",
+    img: tesla,
+    github: "https://github.com/suraj-markup/tesla-nitp-web",
+    url: "https://tesla-nitp.vercel.app/",
+    techStack: ["React Js", "Node Js", "Express", "Appwrite", "Tailwind CSS"],
+  },
+  {
+    id: 3,
+    name: "Tech Pioneer Circle",
+    description: "Made the frontend of this website for one of the client.",
+    img: tpc,
+    github: "",
+    url: "https://techpioneerscircle.com/",
+    techStack: ["React Js", "Tailwind CSS"],
+  },
+  {
+    id: 4,
+    name: "Portfolio",
+    description: "My portfolio website built with ReactJs and TailwindCSS.",
+    img: portfolio,
+    github: "https://github.com/suraj-markup/Portfolio",
+    url: "https://www.surajmarkup.me/",
+    techStack: ["React Js", "Tailwind CSS"],
+  },
+  {
+    id: 5,
+    name: "Nankur Nashta",
+    description:
+      "Made this Food-ordereing website while learning  ReactJs core concetps. Note: while opening this website you might get CORS error as it is using Swiggy's API so you might need to install Allow CORS chrome extension.",
+    img: nashta,
+    github: "https://github.com/suraj-markup/nankur_nashta",
+    url: "https://nankur.vercel.app/",
+    techStack: ["React Js", "ReduxJs", "Tailwind CSS", "Context API"],
+  },
+  {
+    id: 6,
+    name: "HealthSakha",
+    description:
+      "A health care website for booking appointments and getting health related information. This was my project that was built during a hackathon, it is suitable only for laptop and Please ignore bad UI/UX.",
+    img: health,
+    github: "https://github.com/suraj-markup/Byteverse_healthsakha",
+    url: "https://byteverse-nerds.vercel.app/",
+    techStack: [
+      "React Js",
+      "Bootstrap",
+      "Firebase",
+      "Google Maps API",
+      "Dialogflow chatbot",
+    ],
+  },
+];
 
 const MyProjects = () => {
   return (
@@ -18,123 +86,55 @@ const MyProjects = () => {
           </span>
         </span>
       </h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full my-5 md:my-0 place-items-center  ">
-        
-        {/* Image 1 */}
-        <div className="relative group col-span-1 md:col-span-1 md:row-span-2 md:ml-36 py-5 rounded-xl">
-          {/* Background Image */}
+      <div className="mt-28 m-auto px-4">
+  <div className="mt-10 flex flex-wrap gap-6 justify-center">
+    {projects.map((project, id) => (
+      <div
+        key={id}
+        className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 rounded-2xl border-violet-700 border-solid border-2"
+      >
+        <div className="rounded-2xl border-blue-700 border-solid border-2 overflow-hidden">
           <img
-            src={image1}
-            alt="Project xyz"
-            className="w-full rounded-xl object-cover"
+            src={`${project.img}`}
+            alt="project"
+            className="rounded-2xl w-full h-48 object-cover"
           />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-
-          {/* Project Info */}
-          <div className="absolute bottom-5 left-5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-            <h2 className="text-2xl font-bold">Project xyz</h2>
-            <p className="flex items-center text-sm">
-              <span className="mr-1">📍</span> Mumbai, Maharashtra
-            </p>
-          </div>
         </div>
-
-        {/* Image 2 */}
-        <div className="relative group col-span-1 md:col-span-2 my-5 md:my-0  md:mr-32 md:-ml-4">
-          <img
-            src={image2}
-            alt="Project 2"
-            className="rounded-xl object-cover h-full w-full"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-          {/* Project Info */}
-          <div className="absolute bottom-5 left-5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-            <h2 className="text-2xl font-bold">Project 2</h2>
-            <p className="flex items-center text-sm">
-              <span className="mr-1">📍</span> Location 2
-            </p>
-          </div>
+        <h2 className="text-xl my-2 font-bold">{project.name}</h2>
+        <h3 className="text-sm text-gray-600">{project.description}</h3>
+        <p className="mt-3 flex flex-wrap gap-2">
+          {project.techStack.map((tech, id) => (
+            <span
+              key={id}
+              className="bg-violet-700 px-3 py-1 rounded-xl text-white text-xs"
+            >
+              {tech}
+            </span>
+          ))}
+        </p>
+        <div className="mt-4 flex gap-4 items-center">
+          <a
+            href={`${project.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl text-gray-800 hover:text-black"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href={`${project.url}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl text-gray-800 hover:text-black"
+          >
+            <BiWorld />
+          </a>
         </div>
-
-        {/* Image 3 */}
-        <div className="relative group col-span-1 row-span-1 w-[120%] my-5 md:my-0  md:ml-20 md:-mt-5 ">
-          <img
-            src={image3}
-            alt="Project 3"
-            className="rounded-xl object-cover h-full w-full"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-          {/* Project Info */}
-          <div className="absolute bottom-5 left-5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-            <h2 className="text-2xl font-bold">Project 3</h2>
-            <p className="flex items-center text-sm">
-              <span className="mr-1">📍</span> Location 3
-            </p>
-          </div>
-        </div>
-
-        {/* Image 4 */}
-          <Link to="/projects"> 
-        <div className="relative group col-span-1 row-span-1 w-full my-5 md:my-0 md:-ml-4 md:-mt-5">
-          <img
-            src={image4}
-            alt="Project 4"
-            className="rounded-xl object-cover h-full w-full"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-          {/* Project Info */}
-          <div className="absolute bottom-5 left-5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-            <h2 className="text-2xl font-bold">Project 4</h2>
-            <p className="flex items-center text-sm">
-              <span className="mr-1">📍</span> Location 4
-            </p>
-          </div>
-        </div>
-
-          </Link>
-        {/* Image 5 */}
-        <div className="relative group col-span-1 md:col-span-2 my-5 md:my-0  md:ml-40 md:-mr-10">
-          <img
-            src={image5}
-            alt="Project 5"
-            className="rounded-xl object-cover h-full w-full"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-          {/* Project Info */}
-          <div className="absolute bottom-5 left-5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-            <h2 className="text-2xl font-bold">Project 5</h2>
-            <p className="flex items-center text-sm">
-              <span className="mr-1">📍</span> Location 5
-            </p>
-          </div>
-        </div>
-
-        {/* Image 6 */}
-        <div className="relative group col-span-1 row-span-1 my-5 md:my-0 md:mr-20">
-          <img
-            src={image6}
-            alt="Project 6"
-            className="rounded-xl object-cover h-full w-full"
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-xl"></div>
-          {/* Project Info */}
-          <div className="absolute bottom-5 left-5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-            <h2 className="text-2xl font-bold">Project 6</h2>
-            <p className="flex items-center text-sm">
-              <span className="mr-1">📍</span> Location 6
-            </p>
-          </div>
-        </div>
-
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

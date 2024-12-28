@@ -1,7 +1,8 @@
 import { Avatar, Arrow, Arrow2 } from "../assets/Avatar";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import suraj from "../assets/suraj/suraj.jpeg";
+import { FaLinkedinIn,FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdOutlineMail } from "react-icons/md";
 import bg from '../assets/bg.mp4'
 
 const LandingPage = () => {
@@ -14,8 +15,8 @@ const LandingPage = () => {
 
 
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col justify-center  pt-24 sm:pt-20  items-center mt-40 lg:mt-48 ">
-        <Avatar  />
+      <div className="relative z-10 flex flex-col justify-center  pt-24 sm:pt-20  items-center mt-20 lg:mt-40 ">
+        <img src={suraj} alt="profile photo" id="profile photo"className="w-48 rounded-full" />
         <p className="text-2xl  text-white my-2 ">Hola Amigo, I&apos;m <span className="text-3xl font-bold ">Suraj Kumar ✌️</span></p>
 <h1 className="text-3xl md:text-4xl lg:text-5xl  w-9/12 lg:w-6/12 text-center mb-5 text-white">
   I believe in building <br/> <span className="text-cyan-500 text-4xl md:text-5xl lg:text-6xl font-bold ">Tomorrow </span> <span className="text-cyan-400 text-4xl md:text-5xl lg:text-6xl font-bold">Better </span>  <span className="text-cyan-300 text-4xl md:text-5xl lg:text-6xl font-bold">Together </span>
@@ -25,6 +26,9 @@ const LandingPage = () => {
 </p>
 
 <div className="flex justify-center items-center gap-10 my-8 ">
+<a href="mailto:sk9261712674@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
+    <i className="fab fa-mail text-2xl"><MdOutlineMail/></i>
+  </a>
   <a href="https://www.linkedin.com/in/suraj-kumar-86217a20a/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
     <i className="fab fa-linkedin text-2xl"><FaLinkedinIn/></i>
   </a>

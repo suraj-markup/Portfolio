@@ -4,15 +4,11 @@ import Quote from "../Components/Quote";
 import MyJourney from "../Components/MyJourney";
 import MyProjects from "../Components/MyProjects";
 import TopPicks from "../Components/TopPicks";
-import Mentorship from "../Components/Mentorship";
+import TechStack from "../Components/TechStack";
 import Connect from "../Components/Connect";
 
-
 const HomePage = () => {
- 
-
-
-return (
+  return (
     <>
       <style>{`
         .text-gradient-hover {
@@ -29,47 +25,44 @@ return (
       `}</style>
 
       <div className=" text-white bg-black ">
-      <section id="landing-page">
-        <LandingPage />
-      </section>
-      
-      {/* About Me */}
-      <section id="about-me">
-        <AboutMe />
-      </section>
+        <section id="landing-page">
+          <LandingPage />
+        </section>
 
-      {/* Favourite Quote */}
-      <section id="quote">
-        <Quote />
-      </section>
+        {/* About Me */}
+        <section id="about-me">
+          <AboutMe />
+        </section>
 
-      {/* My Journey */}
-      <section id="my-journey">
-        <MyJourney />
-      </section>
+        {/* Favourite Quote */}
+        <section id="quote">
+          <Quote />
+        </section>
 
-      {/* My Favourite Projects */}
-      <section id="my-projects">
-        <MyProjects />
-      </section>
+        {/* My Journey */}
+        <section id="my-journey">
+          <MyJourney />
+        </section>
 
-      {/* My Top Picks */}
-      <section id="top-picks">
-        <TopPicks />
-      </section>
+        {/* My Favourite Projects */}
+        <section id="my-projects">
+          <MyProjects />
+        </section>
 
-      {/* Mentorship & Community */}
-      <section id="mentorship">
-        <Mentorship />
-      </section>
+        {/* Tech Stack */}
+        <section id="tech-stack">
+          <TechStack />
+        </section>
 
-      {/* Let's Connect */}
-      <section id="connect">
-        <Connect />
-      </section>
+        {/* My Top Picks */}
+        <section id="top-picks">
+          <TopPicks />
+        </section>
 
-
-
+        {/* Let's Connect */}
+        <section id="connect">
+          <Connect />
+        </section>
       </div>
     </>
   );

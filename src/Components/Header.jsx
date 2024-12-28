@@ -1,28 +1,11 @@
 import { useState } from "react";
-// import Mail from "../assets/Mail"; // Assuming Mail is your logo or icon
+
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State to manage menu visibility
-  // const [colorChange, setColorChange] = useState(false);
-
-  // // Change navbar background color on scroll
-  // const changeNavbarColor = () => {
-  //   if (window.scrollY >= 100) {
-  //     setColorChange(true);
-  //   } else {
-  //     setColorChange(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", changeNavbarColor);
-  //   return () => {
-  //     window.removeEventListener("scroll", changeNavbarColor);
-  //   };
-  // }, []);
-
+ 
   return (
     <div
       className={`fixed w-full top-0 z-[100] backdrop-blur-md  text-white pt-10 px-10 lg:px-14 xl:px-20 2xl:px-32 transition-all `}
@@ -36,10 +19,10 @@ const Header = () => {
           <div className="flex lg:flex-row items-center gap-3 sm:gap-5">
             {/* <Mail /> */}
             <a
-              href="mailto:attul.sreenath@gmail.com"
-              className="text-sm sm:text-base md:text-lg"
+              href="/"
+              className="text-sm sm:text-base md:text-4xl"
             >
-              attul.sreenath@gmail.com
+              ☀️
             </a>
           </div>
           {/* Hamburger Menu Button (visible on small screens) */}
@@ -72,9 +55,9 @@ const Header = () => {
         <div className="hidden lg:flex">
           <ul className="flex gap-5 sm:gap-8 lg:gap-12 xl:gap-14 text-sm sm:text-sm md:text-base lg:text-base">
             <li className="hover:underline hover:pb-[1px]">
-              <Link to="/" smooth={true} duration={500}>
+              <ScrollLink to="about-me" smooth={true} duration={500}>
                 About Me
-              </Link>
+              </ScrollLink>
             </li>
             <li className="hover:underline hover:pb-[1px]">
               <ScrollLink to="my-journey" smooth={true} duration={500}>
@@ -87,31 +70,27 @@ const Header = () => {
               </ScrollLink>
             </li>
             <li className="hover:underline hover:pb-[1px]">
+              <ScrollLink to="tech-stack" smooth={true} duration={500}>
+                My Tech Stacks
+              </ScrollLink>
+            </li>
+            <li className="hover:underline hover:pb-[1px]">
               <ScrollLink to="top-picks" smooth={true} duration={500}>
                 My Picks
               </ScrollLink>
             </li>
-            <li className="hover:underline hover:pb-[1px]">
-              <Link to="/blogs" smooth={true} duration={500}>
-                Blogs
-              </Link>
-            </li>
-            <li className="hover:underline hover:pb-[1px]">
-              <ScrollLink to="mentorship" smooth={true} duration={500}>
-                Mentorship & Community
-              </ScrollLink>
-            </li>
+            
           </ul>
         </div>
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden mt-5">
-            <ul className="flex flex-col items-start gap-2 text-sm sm:text-base">
+          <div className="lg:hidden mt-5 ">
+            <ul className="flex flex-col  gap-2 text-sm sm:text-base">
               <li className="hover:underline hover:pb-[1px]">
-                <Link to="/" smooth={true} duration={500}>
+                <ScrollLink to="about-me" smooth={true} duration={500}>
                   About Me
-                </Link>
+                </ScrollLink>
               </li>
               <li className="hover:underline hover:pb-[1px]">
                 <ScrollLink to="my-journey" smooth={true} duration={500}>
@@ -124,19 +103,14 @@ const Header = () => {
                 </ScrollLink>
               </li>
               <li className="hover:underline hover:pb-[1px]">
-                <ScrollLink to="top-picks" smooth={true} duration={500}>
-                  My Picks
+                <ScrollLink to="tech-stack" smooth={true} duration={500}>
+                My Tech Stacks
                 </ScrollLink>
               </li>
               <li className="hover:underline hover:pb-[1px]">
-                <Link to="blogs" smooth={true} duration={500}>
-                  Blogs
+                <Link to="top-picks" smooth={true} duration={500}>
+                My Picks
                 </Link>
-              </li>
-              <li className="hover:underline hover:pb-[1px]">
-                <ScrollLink to="mentorship" smooth={true} duration={500}>
-                  Mentorship & Community
-                </ScrollLink>
               </li>
             </ul>
           </div>
