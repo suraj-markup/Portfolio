@@ -6,17 +6,17 @@ import bg from '../assets/bg.mp4'
 
 const LandingPage = () => {
   return (
-    <div className="relative h-[140vh] md:h-[120vh] lg:h-[140vh] xl:h-[120vh] bg-cover bg-no-repeat bg-center pt-1">
+    <div className="relative h-[140vh] md:h-[110vh]  bg-cover bg-no-repeat bg-center pt-1 -mt-10">
       {/* YouTube Video Background */}
      
-      <video autoPlay loop muted className="bg-vid absolute  inset-0 h-[100vh] md:h-[140vh] w-full bg-cover overflow-scroll object-cover"> <source src={bg} type="video/mp4"  /> 
+      <video autoPlay loop muted className="bg-vid absolute  inset-0 h-[100vh] md:h-[110vh] w-full bg-cover overflow-scroll object-cover"> <source src={bg} type="video/mp4"  /> 
      </video>
 
 
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col justify-center items-center mt-40 lg:mt-48 ">
         <Avatar  />
-        <p className="text-2xl  text-white my-2 ">Hello, I&apos;m <span className="text-3xl font-bold ">Suraj Kumar ✌️</span></p>
+        <p className="text-2xl  text-white my-2 ">Hola Amigo, I&apos;m <span className="text-3xl font-bold ">Suraj Kumar ✌️</span></p>
 <h1 className="text-3xl md:text-4xl lg:text-5xl  w-9/12 lg:w-6/12 text-center mb-5 text-white">
   I believe in building <br/> <span className="text-cyan-500 text-4xl md:text-5xl lg:text-6xl font-bold ">Tomorrow </span> <span className="text-cyan-400 text-4xl md:text-5xl lg:text-6xl font-bold">Better </span>  <span className="text-cyan-300 text-4xl md:text-5xl lg:text-6xl font-bold">Together </span>
 </h1>

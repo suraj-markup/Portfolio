@@ -1,33 +1,31 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // import Mail from "../assets/Mail"; // Assuming Mail is your logo or icon
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [colorChange, setColorChange] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // State to manage menu visibility
+  // const [colorChange, setColorChange] = useState(false);
 
-  // Change navbar background color on scroll
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 100) {
-      setColorChange(true);
-    } else {
-      setColorChange(false);
-    }
-  };
+  // // Change navbar background color on scroll
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 100) {
+  //     setColorChange(true);
+  //   } else {
+  //     setColorChange(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", changeNavbarColor);
-    return () => {
-      window.removeEventListener("scroll", changeNavbarColor);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", changeNavbarColor);
+  //   return () => {
+  //     window.removeEventListener("scroll", changeNavbarColor);
+  //   };
+  // }, []);
 
   return (
     <div
-      className={`fixed w-full top-0 z-[100] backdrop-blur-md text-white pt-14 sm:pt-16 md:pt-20 lg:pt-24 px-10 lg:px-14 xl:px-20 2xl:px-32 transition-all ${
-        colorChange ? "hidden" : "block"
-      }`}
+      className={`fixed w-full top-0 z-[100] backdrop-blur-md  text-white pt-10 px-10 lg:px-14 xl:px-20 2xl:px-32 transition-all `}
     >
       <div
 

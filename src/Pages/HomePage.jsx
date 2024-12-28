@@ -1,4 +1,12 @@
 import LandingPage from "../Components/LandingPage";
+import AboutMe from "../Components/AboutMe";
+import Quote from "../Components/Quote";
+import MyJourney from "../Components/MyJourney";
+import MyProjects from "../Components/MyProjects";
+import TopPicks from "../Components/TopPicks";
+import Mentorship from "../Components/Mentorship";
+import Connect from "../Components/Connect";
+
 
 const HomePage = () => {
  
@@ -25,6 +33,41 @@ return (
         <LandingPage />
       </section>
       
+      {/* About Me */}
+      <section id="about-me">
+        <AboutMe />
+      </section>
+
+      {/* Favourite Quote */}
+      <section id="quote">
+        <Quote />
+      </section>
+
+      {/* My Journey */}
+      <section id="my-journey">
+        <MyJourney />
+      </section>
+
+      {/* My Favourite Projects */}
+      <section id="my-projects">
+        <MyProjects />
+      </section>
+
+      {/* My Top Picks */}
+      <section id="top-picks">
+        <TopPicks />
+      </section>
+
+      {/* Mentorship & Community */}
+      <section id="mentorship">
+        <Mentorship />
+      </section>
+
+      {/* Let's Connect */}
+      <section id="connect">
+        <Connect />
+      </section>
+
 
 
       </div>
