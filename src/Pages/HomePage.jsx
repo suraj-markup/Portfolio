@@ -24,7 +24,7 @@ const HomePage = () => {
         }
       `}</style>
 
-      <div className=" text-white bg-black ">
+      <div className=" text-white bg-black overflow-x-hidden">
         <section id="landing-page">
           <LandingPage />
         </section>

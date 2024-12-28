@@ -17,15 +17,15 @@ const LandingPage = () => {
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col justify-center  pt-24 sm:pt-20  items-center mt-20 lg:mt-40 ">
         <img src={suraj} alt="profile photo" id="profile photo"className="w-48 rounded-full" />
-        <p className="text-2xl  text-white my-2 ">Hola Amigo, I&apos;m <span className="text-3xl font-bold ">Suraj Kumar ✌️</span></p>
-<h1 className="text-3xl md:text-4xl lg:text-5xl  w-9/12 lg:w-6/12 text-center mb-5 text-white">
+        <p className="text-base md:text-xl  text-white my-2 ">Hola Amigo, I&apos;m <span className="text-3xl font-bold ">Suraj Kumar ✌️</span></p>
+<h1 className="text-2xl md:text-3xl lg:text-5xl  w-9/12 lg:w-6/12 text-center mb-5 text-white">
   I believe in building <br/> <span className="text-cyan-500 text-4xl md:text-5xl lg:text-6xl font-bold ">Tomorrow </span> <span className="text-cyan-400 text-4xl md:text-5xl lg:text-6xl font-bold">Better </span>  <span className="text-cyan-300 text-4xl md:text-5xl lg:text-6xl font-bold">Together </span>
 </h1>
 <p className="text-sm md:text-base lg:text-lg w-8/12 lg:w-6/12 text-center font-light text-white">
   I&apos;m a Software Developer not by degree🎓 but by Passion.<br/>
 </p>
 
-<div className="flex justify-center items-center gap-10 my-8 ">
+<div className="flex justify-center items-center gap-5 md:gap-10 my-8 ">
 <a href="mailto:sk9261712674@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
     <i className="fab fa-mail text-2xl"><MdOutlineMail/></i>
   </a>
