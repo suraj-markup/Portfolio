@@ -20,7 +20,7 @@ const Header = () => {
             {/* <Mail /> */}
             <a
               href="/"
-              className="text-sm sm:text-base md:text-4xl"
+              className="text-4xl"
             >
               ☀️
             </a>
