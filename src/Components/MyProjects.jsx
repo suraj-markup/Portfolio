@@ -6,7 +6,7 @@ import alumni from "../assets/projects/alumni.png"
 import tesla from "../assets/projects/tesla.png"
 import portfolio from "../assets/projects/portfolio.png"
 import tpc from "../assets/projects/tpc.png"
-import Circle from "../assets/circle";
+import Circle from "../assets/Circle";
 
 const projects = [
   {
@@ -79,7 +79,15 @@ const MyProjects = () => {
   return (
     <div className="bg-black text-white p-10 mt-10">
       <h1 className="relative text-3xl md:text-6xl font-bold text-center mb-16">
-        <span className="relative inline-block">
+      <span
+      className="relative inline-block"
+              style={{
+                background:
+                  "linear-gradient(90deg, #FF3BFF 37.5%, #ECBFBF 46.45%, #8156FF 50.68%, #D94FD5 61.05%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
+        
           My Favourite Projects
           <span className="relative">
             <Circle className="absolute size-32  md:size-max -top-10 md:-top-5 right-0  transform translate-x-4 md:translate-x-12" />

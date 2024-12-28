@@ -34,7 +34,15 @@ const AboutMe = () => {
       <div className="lg:px-40 flex flex-col items-center h-[130vh] md:h-[130vh] lg:h-[110vh] lg:flex-row lg:space-x-5 overflow-hidden ">
         {/* Column One */}
         <div className=" lg:mt-96 lg:mb-64 px-10 lg:px-0 lg:w-5/12">
-          <h1 className="font-bold text-6xl mb-10">About Me</h1>
+          <h1 className="font-bold text-6xl mb-10 ">
+          <span
+              style={{
+                background:
+                  "linear-gradient(90deg, #FF3BFF 37.5%, #ECBFBF 46.45%, #8156FF 50.68%, #D94FD5 61.05%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
+            About Me</span></h1>
           <p className="text-lg">
             22 years of mastering the art of overthinking solutions, whether
             it&apos;s coding my way out of bugs, cracking competitive

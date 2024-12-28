@@ -1,4 +1,4 @@
-import { Avatar, Arrow, Arrow2 } from "../assets/Avatar";
+import { Arrow, Arrow2 } from "../assets/Avatar";
 import suraj from "../assets/suraj/suraj.jpeg";
 import { FaLinkedinIn,FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -10,7 +10,7 @@ const LandingPage = () => {
     <div className="relative h-[140vh] md:h-[110vh] bg-cover bg-no-repeat bg-center pt-1 -mt-10">
       {/* YouTube Video Background */}
      
-      <video autoPlay loop muted className="bg-vid absolute  inset-0 h-[100vh] md:h-[110vh] w-full bg-cover overflow-scroll object-cover"> <source src={bg} type="video/mp4"  /> 
+      <video autoPlay loop muted className="bg-vid absolute  inset-0 h-[110vh] md:h-[110vh] w-full bg-cover overflow-scroll object-cover"> <source src={bg} type="video/mp4"  /> 
      </video>
 
 

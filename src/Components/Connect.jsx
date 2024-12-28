@@ -1,10 +1,16 @@
-import Circle from "../assets/circle";
+import Circle from "../assets/Circle";
 const Connect = () => {
   return (
     <div className="">
       <div className="m-auto bg-black py-36  px-10">
         <h1 className="relative text-5xl md:text-6xl font-bold text-center mb-16">
-          <span className="relative inline-block">
+        <span className="relative inline-block "
+              style={{
+                background:
+                  "linear-gradient(90deg, #FF3BFF 37.5%, #ECBFBF 46.45%, #8156FF 50.68%, #D94FD5 61.05%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
             Sold OR Not ?
             <span className="relative">
               <Circle className="absolute size-44  md:size-max -top-12 lg:-top-8 right-0  transform translate-x-10" />

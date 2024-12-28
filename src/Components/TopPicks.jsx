@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 import Slider from "react-slick";
-import Circle from "../assets/circle";
+import Circle from "../assets/Circle";
 
 const TopPicks = () => {
   const books = [
@@ -57,7 +57,15 @@ const TopPicks = () => {
   return (
     <div className="bg-black text-white p-10 mt-32">
       <h1 className="relative text-4xl md:text-6xl font-bold text-center mb-16">
-        <span className="relative inline-block">
+   
+        <span
+        className="relative inline-block"
+              style={{
+                background:
+                  "linear-gradient(90deg, #FF3BFF 37.5%, #ECBFBF 46.45%, #8156FF 50.68%, #D94FD5 61.05%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
           My Top Picks
           <span className="relative">
             <Circle className="absolute size-32  md:size-max -top-8 right-0  transform translate-x-10 md:translate-x-10" />
