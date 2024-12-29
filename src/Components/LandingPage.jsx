@@ -3,6 +3,8 @@ import suraj from "../assets/suraj/suraj.jpeg";
 import { FaLinkedinIn,FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
+import { SiLeetcode,SiCodechef } from "react-icons/si";
+
 import bg from '../assets/bg.mp4'
 
 const LandingPage = () => {
@@ -25,9 +27,17 @@ const LandingPage = () => {
   I&apos;m a Software Developer not by degree🎓 but by Passion.<br/>
 </p>
 
-<div className="flex justify-center items-center gap-5 md:gap-10 my-8 ">
+<div className="flex justify-center items-center flex-col md:flex-row gap-5  my-8 ">
+  <div className="flex flex-row gap-x-5">
+
 <a href="mailto:sk9261712674@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
     <i className="fab fa-mail text-2xl"><MdOutlineMail/></i>
+  </a>
+  <a href="https://leetcode.com/u/suraj-markup/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
+    <i className="fab fa-linkedin text-2xl"><SiLeetcode/></i>
+  </a>
+  <a href="https://www.codechef.com/users/surajmarkup" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
+    <i className="fab fa-linkedin text-2xl"><SiCodechef/></i>
   </a>
   <a href="https://www.linkedin.com/in/suraj-kumar-86217a20a/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
     <i className="fab fa-linkedin text-2xl"><FaLinkedinIn/></i>
@@ -38,6 +48,9 @@ const LandingPage = () => {
   <a href="https://x.com/suraj_markup" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition duration-200">
     <i className="fab fa-twitter text-2xl"> <FaXTwitter/></i>
   </a>
+  </div>
+  <div>
+
   
 <a href="https://drive.google.com/file/d/1JicCSLC9AcpyZ7BMR4jKRa7boTUIStgq/view?usp=drive_link" target="_blank" download="Suraj_Kumar_CV" className="border-2 flex flex-row items-center justify-center gap-2 border-white rounded-3xl px-4 py-2 w-40 hover:bg-white relative group ">
   <p className="text-gradient-hover">Download CV</p>
@@ -46,6 +59,7 @@ const LandingPage = () => {
     <Arrow2 className="transition-all duration-200 ease-in-out hidden group-hover:block" />
   </div>
 </a>
+  </div>
 </div>
 
 

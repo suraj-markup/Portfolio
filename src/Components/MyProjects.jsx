@@ -109,7 +109,7 @@ const MyProjects = () => {
           />
         </div>
         <h2 className="text-xl my-2 font-bold">{project.name}</h2>
-        <h3 className="text-sm text-gray-600">{project.description}</h3>
+        <h3 className="text-sm text-gray-400">{project.description}</h3>
         <p className="mt-3 flex flex-wrap gap-2">
           {project.techStack.map((tech, id) => (
             <span
@@ -125,7 +125,7 @@ const MyProjects = () => {
             href={`${project.github}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl text-gray-800 hover:text-black"
+            className="text-2xl text-gray-500 hover:text-gray-200"
           >
             <FaGithub />
           </a>
@@ -133,7 +133,7 @@ const MyProjects = () => {
             href={`${project.url}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl text-gray-800 hover:text-black"
+            className="text-2xl text-gray-500 hover:text-gray-200"
           >
             <BiWorld />
           </a>
