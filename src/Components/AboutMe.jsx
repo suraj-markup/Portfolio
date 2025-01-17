@@ -1,8 +1,8 @@
-import second from "../assets/suraj/2.jpeg";
-import third from "../assets/suraj/3.jpeg";
-import fourth from "../assets/suraj/4.jpeg";
-import fifth from "../assets/suraj/5.jpeg";
-import sixth from "../assets/suraj/6.jpeg";
+import second from "../assets/suraj/2.webp";
+import third from "../assets/suraj/3.webp";
+import fourth from "../assets/suraj/4.webp";
+import fifth from "../assets/suraj/5.webp";
+import sixth from "../assets/suraj/6.webp";
 
 const images = [
   {
