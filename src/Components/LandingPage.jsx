@@ -52,7 +52,7 @@ const LandingPage = () => {
   <div>
 
   
-<a href="https://drive.google.com/file/d/1JicCSLC9AcpyZ7BMR4jKRa7boTUIStgq/view?usp=drive_link" target="_blank" download="Suraj_Kumar_CV" className="border-2 flex flex-row items-center justify-center gap-2 border-white rounded-3xl px-4 py-2 w-40 hover:bg-white relative group ">
+<a href="https://drive.google.com/file/d/1TjeRUM_NDIeDgsDx4seUKuz490-PMeCn/view?usp=drive_link" target="_blank" download="Suraj_Kumar_CV" className="border-2 flex flex-row items-center justify-center gap-2 border-white rounded-3xl px-4 py-2 w-40 hover:bg-white relative group ">
   <p className="text-gradient-hover">Download CV</p>
   <div className="relative">
     <Arrow className="transition-all duration-200 ease-in-out block group-hover:hidden" />
