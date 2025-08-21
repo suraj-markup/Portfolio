@@ -1,9 +1,10 @@
 import Circle from "../assets/Circle";
+import { sectionWrapperClasses } from "../utils/spacingUtils";
 const Connect = () => {
   return (
     <div className="">
-      <div className="m-auto bg-black py-36  px-10">
-        <h1 className="relative text-5xl md:text-6xl font-bold text-center mb-16">
+      <div className={`m-auto bg-black ${sectionWrapperClasses}`}>
+        <h1 className="relative text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12 lg:mb-16">
         <span className="relative inline-block "
               style={{
                 background:
@@ -17,7 +18,7 @@ const Connect = () => {
             </span>
           </span>
         </h1>
-        <div className=" m-auto w-full md:w-9/12 mt-32  ">
+        <div className="m-auto w-full md:w-9/12 mt-8 sm:mt-12 lg:mt-16 max-w-content-lg">
           <p className="text-lg">
             Thanks for stopping by, I&apos;m currently looking to join a new
             team of creative designers and developers. If you think we might be

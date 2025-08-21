@@ -2,6 +2,7 @@ import LandingPage from "../Components/LandingPage";
 import AboutMe from "../Components/AboutMe";
 import Quote from "../Components/Quote";
 import MyJourney from "../Components/MyJourney";
+import Experience from "../Components/Experience";
 import MyProjects from "../Components/MyProjects";
 import TopPicks from "../Components/TopPicks";
 import TechStack from "../Components/TechStack";
@@ -40,8 +41,13 @@ const HomePage = () => {
         </section>
 
         {/* My Journey */}
-        <section id="my-journey">
+        {/* <section id="my-journey">
           <MyJourney />
+        </section> */}
+
+        {/* Experience */}
+        <section id="experience">
+          <Experience />
         </section>
 
         {/* My Favourite Projects */}

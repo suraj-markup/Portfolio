@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 import Slider from "react-slick";
 import Circle from "../assets/Circle";
+import { sectionWrapperClasses } from "../utils/spacingUtils";
 
 const TopPicks = () => {
   const books = [
@@ -55,8 +56,8 @@ const TopPicks = () => {
     beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex), // Track the current slide index
   };
   return (
-    <div className="bg-black text-white p-10 mt-32">
-      <h1 className="relative text-4xl md:text-6xl font-bold text-center mb-16">
+    <div className={`bg-black text-white ${sectionWrapperClasses}`}>
+      <h1 className="relative text-4xl md:text-6xl font-bold text-center mb-8 sm:mb-12 lg:mb-16">
    
         <span
         className="relative inline-block"
@@ -75,13 +76,11 @@ const TopPicks = () => {
 
       {/* Favoutrite Books */}
       <div className=" w-10/12 m-auto">
-        <h1 className="text-3xl md:text-[40px] font-bold my-10">Books</h1>
-        <p className="text-lg">
+        <p className="text-lg text-center text-gray-400 mt-20">
           &quot;A reader lives a thousand lives before he dies. The man who
           never reads lives only one.&quot; -- George R.R. Martin
         </p>
-        <div className=" mx-auto mt-20">
-          <div className="relative w-full">
+        <div className=" mx-auto mt-8">          <div className="relative w-full">
             {/* Slider with scaling logic */}
             <Slider {...settings}>
               {books.map((book, index) => (

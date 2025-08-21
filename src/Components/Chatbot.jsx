@@ -8,7 +8,7 @@ const Chatbot = () => {
   };
 
   return (
-    <div style={{ position: "fixed", bottom: "40px", right: "40px", zIndex: 1000 }}>
+    <div className="fixed bottom-20 right-6 md:right-4 z-50">
      
       {!isOpen && (
         <button
