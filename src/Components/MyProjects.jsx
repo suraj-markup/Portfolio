@@ -27,7 +27,7 @@ const projects = [
     url: "https://www.linkedin.com/posts/suraj-kumar-86217a20a_for-years-weve-treated-ai-chats-like-a-activity-7362374493870182400-HEJW",
     techStack: ["React Js", "Python", "FAST API", "AI Integration", "Threaded UI", "Modern UX"],
     category: "AI/ML",
-    longDescription: "A groundbreaking AI chat platform that introduces threaded conversations to solve the fundamental limitation of linear AI chats. Built with user experience as the core foundation, it allows users to keep main conversations on track while diving into side topics without losing context. Features include clean threaded conversation model, focused spaces for every idea, and easy information retrieval.",
+    longDescription: "A groundbreaking AI chat platform that introduces threaded conversations to solve the fundamental limitation of linear AI chats. Features include clean threaded conversation model, focused spaces for every idea, and easy information retrieval.",
     features: ["Threaded Conversations", "Context Preservation", "Side Topic Management", "Clean UI/UX", "AI Integration", "Project Planning Tools"],
     metrics: {
       visitors: "Coming Soon",
@@ -46,7 +46,7 @@ const projects = [
     url: "https://ghiblify-two.vercel.app/",
     techStack: ["React Js", "Next.js", "Vercel", "Trend Analysis", "Marketing", "Revenue Generation"],
     category: "Frontend",
-    longDescription: "A successful trend-based website that capitalized on the Studio Ghibli trend at the perfect moment. Built and launched strategically to capture market demand, resulting in impressive user acquisition and revenue generation. The project demonstrates excellent market timing, user experience design, and conversion optimization skills.",
+    longDescription: "A successful trend-based website that capitalized on the Studio Ghibli trend at the perfect moment. The project demonstrates excellent market timing, user experience design, and conversion optimization skills.",
     features: ["Trend Analysis", "Rapid Development", "User Acquisition", "Conversion Optimization", "Revenue Generation", "Market Timing"],
     metrics: {
       visitors: "1,000+",
@@ -511,7 +511,7 @@ const MyProjects = () => {
       </div>
 
       {/* Project Modal */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {selectedProject && (
           <motion.div
             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
@@ -600,7 +600,7 @@ const MyProjects = () => {
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };
