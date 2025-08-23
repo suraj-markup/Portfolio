@@ -80,7 +80,7 @@ const Experience = () => {
 
   return (
     <div 
-      className={`bg-black text-white ${sectionWrapperClasses}`}
+      className={`bg-black text-white pb-48 px-container sm:px-container-lg lg:px-container-xl max-w-content mx-auto`}
       id="experience"
       style={{ 
         touchAction: 'pan-y',

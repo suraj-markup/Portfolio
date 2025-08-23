@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import screens from "../assets/screens.png";
 import Ellipse from "../assets/Ellipse.png";
-import { spacingClasses } from "../utils/spacingUtils";
+
 
 const Quote = () => {
   return (
     <div>
-      <div className="relative mt-52 lg:mt-0 bg-black overflow-x-clip h-[70vh] sm:h-[100vh] md:h-[120vh] lg:h-[150vh] xl:h-[160vh]">
+      <div className="relative mt-52 lg:mt-0 bg-black overflow-x-clip h-[70vh] sm:h-[100vh] md:h-[120vh] lg:h-[130vh] xl:h-[140vh]">
         <img
           src={Ellipse}
           alt="screen"

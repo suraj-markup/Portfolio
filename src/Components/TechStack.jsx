@@ -6,7 +6,7 @@ import { AiFillHtml5, AiFillGithub } from 'react-icons/ai'
 import { FaReact, FaFigma } from 'react-icons/fa';
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from 'react-icons/io'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { SiExpress, SiTailwindcss, SiPostman, SiFirebase,SiAppwrite, SiSupabase } from 'react-icons/si'
+import { SiExpress, SiTailwindcss, SiPostman, SiFirebase,SiAppwrite, SiSupabase, SiDocker } from 'react-icons/si'
 import { SiMongodb, SiPostgresql, } from "react-icons/si";
 import Circle from "../assets/Circle";
 
@@ -35,6 +35,7 @@ const TechStack = () => {
     { icon: <FaFigma />, name: "Figma", category: "tools", proficiency: 70 },
     { icon: <AiFillGithub />, name: "GitHub", category: "tools", proficiency: 88 },
     { icon: <SiMongodb />, name: "MongoDB", category: "backend", proficiency: 75 },
+    { icon: <SiDocker />, name: "Docker", category: "tools", proficiency: 80 },
     { icon: <SiAppwrite />, name: "Appwrite", category: "backend", proficiency: 80 },
     { icon: <SiSupabase />, name: "Supabase", category: "backend", proficiency: 80 },
     { icon: <SiPostgresql />, name: "PostgreSQL", category: "backend", proficiency: 72 },
